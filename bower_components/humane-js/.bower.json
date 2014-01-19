@@ -1,0 +1,18 @@
+{
+  "name": "humane-js",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.1.1"
+  },
+  "version": "0.1.1",
+  "homepage": "https://github.com/Polymer/humane-js",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "ef70ac5b69d8a97e53c55acf2b419970ce2cf3f5"
+  },
+  "_source": "git://github.com/Polymer/humane-js.git",
+  "_target": "0.1.1",
+  "_originalSource": "Polymer/humane-js"
+}

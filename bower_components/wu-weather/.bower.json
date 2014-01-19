@@ -1,0 +1,19 @@
+{
+  "name": "wu-weather",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.1.1",
+    "polymer-jsonp": "Polymer/polymer-jsonp#0.1.1"
+  },
+  "version": "0.1.1",
+  "homepage": "https://github.com/Polymer/wu-weather",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "b20011815d4a73c12bb1b125e5b0bac440482c2d"
+  },
+  "_source": "git://github.com/Polymer/wu-weather.git",
+  "_target": "0.1.1",
+  "_originalSource": "Polymer/wu-weather"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "polymer-stock",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.1.1",
+    "polymer-jsonp": "Polymer/polymer-jsonp#0.1.1",
+    "polymer-media-query": "Polymer/polymer-media-query#0.1.1"
+  },
+  "version": "0.1.1"
+}

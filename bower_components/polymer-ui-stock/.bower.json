@@ -1,0 +1,22 @@
+{
+  "name": "polymer-ui-stock",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.1.1",
+    "polymer-jsonp": "Polymer/polymer-jsonp#0.1.1",
+    "chart-js": "Polymer/chart-js#0.1.1",
+    "polymer-ajax": "Polymer/polymer-ajax#0.1.1"
+  },
+  "version": "0.1.1",
+  "homepage": "https://github.com/Polymer/polymer-ui-stock",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "c002e387537b6b4ee57b9a6ea1fd9bf78f299f3a"
+  },
+  "_source": "git://github.com/Polymer/polymer-ui-stock.git",
+  "_target": "~0.1.1",
+  "_originalSource": "Polymer/polymer-ui-stock",
+  "_direct": true
+}

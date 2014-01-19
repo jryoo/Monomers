@@ -1,0 +1,19 @@
+{
+  "name": "tk-buildbot",
+  "private": true,
+  "dependencies": {
+    "polymer": "Polymer/polymer#0.1.1",
+    "polymer-ajax": "Polymer/polymer-ajax#0.1.1"
+  },
+  "version": "0.1.1",
+  "homepage": "https://github.com/Polymer/tk-buildbot",
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "29dd29b2943a606b1377ce614ed2ee5d440554ae"
+  },
+  "_source": "git://github.com/Polymer/tk-buildbot.git",
+  "_target": "0.1.1",
+  "_originalSource": "Polymer/tk-buildbot"
+}
