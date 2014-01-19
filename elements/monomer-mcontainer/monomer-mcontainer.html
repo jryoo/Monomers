@@ -1,0 +1,78 @@
+<!--
+    A mobile container monomer for Polymer
+
+    Prevents showing browser chrome
+-->
+
+<polymer-element name="monomer-mcontainer" attributes="" extends="">
+  <script src="../../dependencies/jquery/jquery.min.js"></script>
+  <template>
+    <style>
+      #width {
+        width: 100%;
+      }
+      #content {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+      }
+      ::content div {
+          color: red;
+      }
+    </style>
+    <div id="width">
+      <div id="content">
+        <div id="innerContent">
+          <content select="*"></content>
+        </div> <!--innerContent-->
+      </div> <!--content-->
+    </div> <!--width-->
+  </template>
+
+  <script>
+    Polymer('monomer-mcontainer', {
+        /**
+         * ScrollFix v0.1
+         * http://www.joelambert.co.uk
+         *
+         * Copyright 2011, Joe Lambert.
+         * Free to use under the MIT license.
+         * http://www.opensource.org/licenses/mit-license.php
+         */
+
+        var ScrollFix = function(elem) {
+                // Variables to track inputs
+                var startY, startTopScroll;
+                
+                elem = elem || document.querySelector(elem);
+                
+                // If there is no element, then do nothing        
+                if(!elem)
+                        return;
+
+                // Handle the start of interactions
+                elem.addEventListener('touchstart', function(event){
+                        startY = event.touches[0].pageY;
+                        startTopScroll = elem.scrollTop;
+                        
+                        if(startTopScroll <= 0)
+                                elem.scrollTop = 1;
+
+                        if(startTopScroll + elem.offsetHeight >= elem.scrollHeight)
+                                elem.scrollTop = elem.scrollHeight - elem.offsetHeight - 1;
+                }, false);
+        };
+
+        ready: function() {
+            // Add ScrollFix
+            var scrollingContent = this.$.content;
+            new ScrollFix(scrollingContent);
+            $(this.$.innerContent).css('min-height', $(window).height() + 5 + 'px');
+        }
+    });
+  </script>
+</polymer-element>
